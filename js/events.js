@@ -19,8 +19,8 @@ function verSoft() {
 
     const elementoSoftSkills = document.querySelector("#card-soft");
     const elementoHardSkills = document.querySelector("#card-hard");
-    elementoHardSkills.style.visibility = "hidden";
-    elementoSoftSkills.style.visibility = "visible";
+    elementoHardSkills.style.display = "none";
+    elementoSoftSkills.style.display = "inline";
 
     const textoHardSkill = document.querySelector(".hard");
     textoHardSkill.style.backgroundColor = 'var(--colorNegro)';
@@ -36,8 +36,8 @@ function verSoft() {
 function verHard() {
     const elementoHardSkills = document.querySelector("#card-hard");
     const elementoSoftSkills = document.querySelector("#card-soft");
-    elementoSoftSkills.style.visibility = "hidden";
-    elementoHardSkills.style.visibility = "visible";
+    elementoSoftSkills.style.display = "none";
+    elementoHardSkills.style.display = "inline";
 
     const textoHardSkill = document.querySelector(".hard");
     textoHardSkill.style.backgroundColor = 'var(--colorGris)';

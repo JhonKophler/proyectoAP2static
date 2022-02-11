@@ -288,6 +288,11 @@ label {
     flex-direction: column;
 }
 
+.head-skills {
+    display: flex;
+    flex-direction: row;
+}
+
 .hard {
     background-color: var(--colorGris);
     border-radius: 0.8rem 0.8rem 0 0;
