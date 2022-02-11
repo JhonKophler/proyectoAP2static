@@ -10,6 +10,7 @@
     --colorGris: #e1dee3;
     --colorNegro: #2e282a;
     --colorBlancoForm: #DADADA;
+    --colorGrisProgressBarBack: #B0B0B0;
     --colorNegroDegrade1: #211c1e;
     --colorNegroDegrade2: #211e20;
     --colorDegradeNaranja: #41393c;
@@ -359,6 +360,17 @@ label {
 
 .progress-bar {
     background: var(--colorSecundario);
+}
+
+#card-soft>.progress {
+    background: var(--colorGrisProgressBarBack);
+    border-radius: 1rem;
+    height: 0.7rem;
+    margin: 0.1rem;
+}
+
+#card-soft .progress-bar {
+    background: var(--colorPrimario);
 }
 
 
