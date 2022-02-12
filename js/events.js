@@ -29,8 +29,6 @@ function verSoft() {
     const textoSoftSkill = document.querySelector(".soft");
     textoSoftSkill.style.backgroundColor = 'var(--colorGris)';
     textoSoftSkill.style.color = 'var(--colorNegro)';
-
-
 }
 
 function verHard() {
@@ -46,8 +44,4 @@ function verHard() {
     const textoSoftSkill = document.querySelector(".soft");
     textoSoftSkill.style.backgroundColor = 'var(--colorNegro)';
     textoSoftSkill.style.color = 'var(--colorLetraBlanca)';
-
-
-
-
 }
