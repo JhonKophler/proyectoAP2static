@@ -33,7 +33,7 @@
     box-sizing: border-box;
     border-radius: 1rem;
     font-family: "Outfit", sans-serif;
-    font-size: 30px;
+    font-size: 1.5vw;
     color: var(--colorLetraBlanca);
 }
 
