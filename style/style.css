@@ -228,13 +228,13 @@ menu>a {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    width: 90%;
+    width: 95%;
 }
 
 .card-contact {
     top: 20px;
     background: var(--colorBlanco);
-    width: 40%;
+    width: 35%;
     box-shadow: var(--sombra);
     z-index: 5;
 }
@@ -386,6 +386,7 @@ label {
 /* Card Experiencias */
 
 .card-info {
+    width: 55%;
     border-radius: 0 1rem 1rem 0;
     background-image: url('../img/banner2.jpg');
     background-repeat: no-repeat;
