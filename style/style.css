@@ -234,7 +234,7 @@ menu>a {
 .card-contact {
     top: 20px;
     background: var(--colorBlanco);
-    width: 35%;
+    width: 40%;
     box-shadow: var(--sombra);
     z-index: 5;
 }
@@ -386,7 +386,7 @@ label {
 /* Card Experiencias */
 
 .card-info {
-    width: 55%;
+    width: 60%;
     border-radius: 0 1rem 1rem 0;
     background-image: url('../img/banner2.jpg');
     background-repeat: no-repeat;
