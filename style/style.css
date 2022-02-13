@@ -104,6 +104,10 @@ content {
     visibility: hidden;
 }
 
+.ingresar span {
+    text-align: center;
+}
+
 #card-login {
     margin: 20vw;
 }
