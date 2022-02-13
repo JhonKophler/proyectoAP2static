@@ -185,6 +185,11 @@ i {
     padding: 0;
 }
 
+.redes-login p {
+    margin: 0;
+    font-size: 0.5rem;
+}
+
 .redes>a:hover {
     background: 0;
     padding: 0;
@@ -220,6 +225,12 @@ a:hover {
 a:active {
     color: var(--colorPrimario);
     background: var(--colorNegro);
+}
+
+.spinner-border {
+    width: 0px;
+    height: 0px;
+    display: none;
 }
 
 

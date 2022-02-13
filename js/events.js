@@ -49,9 +49,24 @@ function verHard() {
 function login() {
     const elementoPantallaLogin = document.querySelector(".ingresar");
     elementoPantallaLogin.style.visibility = 'visible';
+
+    const spinner = document.querySelector(".spinner-border");
+    spinner.style.display = 'inline-block';
+
+    const palabraLogin = document.querySelector(".login p");
+    console.log(palabraLogin);
+    palabraLogin.style.display = 'none';
+
 }
 
 function exit() {
     const elementoPantallaLogin = document.querySelector(".ingresar");
     elementoPantallaLogin.style.visibility = 'hidden';
+
+    const spinner = document.querySelector(".spinner-border");
+    spinner.style.display = 'none';
+
+    const palabraLogin = document.querySelector(".login p");
+    palabraLogin.style.display = 'inline-block';
+
 }
