@@ -26,7 +26,7 @@
     --sombra: -0.5rem 0.3rem 0.2rem rgba(0, 0, 0, 0.25);
     --sombraInterior: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
     --anim: all 0.3s ease-out;
-    --colorCerrarCuadro: #8c0000;
+    --colorCerrarCuadro: #e61919;
     /*------------------------------*/
     /*Configuraciones Globales*/
     margin: 0;
@@ -129,6 +129,10 @@ content {
     right: -10px;
     top: -10px;
     position: absolute;
+}
+
+.ingresar .exit:active {
+    background-color: var(--colorFondoCelesteOscuro);
 }
 
 
