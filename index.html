@@ -14,8 +14,10 @@
 </head>
 
 <body>
+
     <!-- Global es el contenido completo de la pagina -->
     <section id="top" class="global">
+
         <!-- Logo-Header y Redes sociales -->
         <nav>
             <div class="contenedor-logo">
@@ -29,9 +31,27 @@
                     <a href="https://www.facebook.com/profile.php?id=100010528774946" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a><i id="btn-disc" class="fab fa-discord" onclick="copiado()"><p>jhonkophler#1876</p></i></a>
                 </div>
-                <a href="#" class="login">Login</a>
+                <a href="#" onclick="login()" class="login">Login</a>
             </div>
         </nav>
+        <div class="ingresar">
+            <section id="card-login">
+                <form>
+                    <span>Ingrese a la cuenta para modificar el contenido</span>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">ingrese su email</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </section>
+            <button onclick="exit()" class="btn exit"><strong>X</strong></button>
+        </div>
 
         <!--<div id="muestraUserDiscord">usuariocopiado</div>-->
 
@@ -270,7 +290,7 @@
 
             <!-- Proyectos -->
             <section id="mid">
-                <h6>Proyectos</h6>
+                <a href="#mid">Proyectos</a>
                 <div class="content-proyect">
                     <img class="img-first" src="../img/proyectos/radio/pro1.png" />
                     <div class="thumb">

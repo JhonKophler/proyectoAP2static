@@ -26,6 +26,7 @@
     --sombra: -0.5rem 0.3rem 0.2rem rgba(0, 0, 0, 0.25);
     --sombraInterior: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
     --anim: all 0.3s ease-out;
+    --colorCerrarCuadro: #8c0000;
     /*------------------------------*/
     /*Configuraciones Globales*/
     margin: 0;
@@ -33,7 +34,7 @@
     box-sizing: border-box;
     border-radius: 1rem;
     font-family: "Outfit", sans-serif;
-    font-size: 1.5vw;
+    font-size: 29px;
     color: var(--colorLetraBlanca);
 }
 
@@ -87,6 +88,47 @@ content {
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
+}
+
+.ingresar {
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    position: absolute;
+    z-index: 30;
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+#card-login {
+    margin: 20vw;
+}
+
+#card-login form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-login button {
+    position: relative;
+}
+
+.ingresar .exit {
+    position: relative;
+    background-color: var(--colorCerrarCuadro);
+    color: #000;
+    align-items: center;
+    font-size: 0.5rem;
+    right: -10px;
+    top: -10px;
+    position: absolute;
 }
 
 
@@ -423,6 +465,7 @@ label {
     color: var(--colorLetraNegra);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .content-works>i:hover {
@@ -494,7 +537,7 @@ label {
 }
 
 .img-cur>img {
-    width: 100px
+    width: 3rem;
 }
 
 
@@ -516,8 +559,16 @@ label {
     align-items: center;
 }
 
-#mid>h6 {
+#mid>a {
     margin: 1%;
+    font-size: 1rem;
+    background: none;
+}
+
+#mid a:hover {
+    border-radius: 0;
+    cursor: pointer;
+    background: linear-gradient( to bottom, var(--colorSecundario), var(--colorDegradeNaranja));
 }
 
 .content-proyect {
@@ -700,9 +751,9 @@ footer {
 }
 
 .subir {
+    background-color: var(--colorNegroDegrade2);
     font-size: 0.5rem;
     padding: 0.3rem;
-    position: absolute;
     bottom: 1rem;
     left: 1rem;
     border-radius: 0.5rem;

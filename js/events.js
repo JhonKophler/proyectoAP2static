@@ -45,3 +45,13 @@ function verHard() {
     textoSoftSkill.style.backgroundColor = 'var(--colorNegro)';
     textoSoftSkill.style.color = 'var(--colorLetraBlanca)';
 }
+
+function login() {
+    const elementoPantallaLogin = document.querySelector(".ingresar");
+    elementoPantallaLogin.style.visibility = 'visible';
+}
+
+function exit() {
+    const elementoPantallaLogin = document.querySelector(".ingresar");
+    elementoPantallaLogin.style.visibility = 'hidden';
+}
