@@ -49,6 +49,7 @@ function verHard() {
 function login() {
     const elementoPantallaLogin = document.querySelector(".ingresar");
     elementoPantallaLogin.style.visibility = 'visible';
+    elementoPantallaLogin.style.opacity = '1';
 
     const spinner = document.querySelector(".spinner-border");
     spinner.style.display = 'inline-block';
@@ -62,6 +63,7 @@ function login() {
 function exit() {
     const elementoPantallaLogin = document.querySelector(".ingresar");
     elementoPantallaLogin.style.visibility = 'hidden';
+    elementoPantallaLogin.style.opacity = '0';
 
     const spinner = document.querySelector(".spinner-border");
     spinner.style.display = 'none';

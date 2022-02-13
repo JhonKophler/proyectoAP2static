@@ -102,6 +102,8 @@ content {
     align-items: center;
     justify-content: center;
     visibility: hidden;
+    transition: .3s ease all;
+    opacity: 0;
 }
 
 .ingresar span {
@@ -785,3 +787,6 @@ footer {
     transition: var(--anim);
     padding: 0.3rem;
 }
+
+
+/* ANIMACIONES */
