@@ -1,12 +1,30 @@
+/* var porcentajes = {
+
+    html: '69%',
+    css: '52%',
+    javascript: '85%',
+    bootstrap: '55%',
+    c: '90%',
+    typescript: '63%',
+    angular: '60%',
+    trabajo: '70%',
+    resolucion: '48%',
+    ingles: '60%',
+    scrum: '65%',
+    lid: '55%',
+    proyeccion: '85%',
+
+}
+
+localStorage.setItem("listaPorcentajes", JSON.stringify(porcentajes));
+var listaDesdeLocal = JSON.parse(localStorage.getItem("porcentajes")); */
+
 function copiado() {
 
-    /* Obtener el contenido de el elemento "btn-disc" */
     var copyText = document.getElementById("btn-disc").textContent;
 
-    /* Copiar al clipboard */
     navigator.clipboard.writeText(copyText);
 
-    /* Alert para mostrar lo que quedo copiado */
     alert("Usuario copiado al Portapapels: " + copyText);
 
 }
@@ -29,6 +47,7 @@ function verSoft() {
     const textoSoftSkill = document.querySelector(".soft");
     textoSoftSkill.style.backgroundColor = 'var(--colorGris)';
     textoSoftSkill.style.color = 'var(--colorNegro)';
+
 }
 
 function verHard() {
@@ -70,6 +89,7 @@ function login() {
     const cuerpo = document.querySelector('.global');
     cuerpo.classList.add('no-scroll');
     cuerpo.style.borderRadius = '0';
+
 }
 
 function exit() {
@@ -87,5 +107,33 @@ function exit() {
     const cuerpo = document.querySelector('.global');
     cuerpo.classList.remove('no-scroll');
 
-
 }
+
+
+/* function cargaDePorcentajes() {
+
+
+
+    const elementoBarra = document.getElementsByClassName('elemento-barra');
+    const porProgressBar = document.getElementsByClassName('progress-bar');
+    console.log(listaDesdeLocal);
+
+    for (let i = 0; i < elementoBarra.length; i++) {
+
+
+        let h4 = elementoBarra[i].children[0].children[0].textContent;
+        let porc = elementoBarra[i].children[0].children[1].textContent;
+        elementoBarra[i].children[1].children[0].style.color = 'red';
+
+        console.log(h4);
+        console.log(porc);
+        console.log("================");
+
+
+    }
+
+ */
+
+/* console.log(porcentajes[0].html); */
+
+/* } */
