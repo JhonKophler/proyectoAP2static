@@ -46,7 +46,16 @@ function verHard() {
     textoSoftSkill.style.color = 'var(--colorLetraBlanca)';
 }
 
+
+function disableScroll() {
+    window.scrollTo(-10000, -10000);
+}
+
+
+
+
 function login() {
+
     const elementoPantallaLogin = document.querySelector(".ingresar");
     elementoPantallaLogin.style.visibility = 'visible';
     elementoPantallaLogin.style.opacity = '1';
@@ -55,12 +64,16 @@ function login() {
     spinner.style.display = 'inline-block';
 
     const palabraLogin = document.querySelector(".login p");
-    console.log(palabraLogin);
     palabraLogin.style.display = 'none';
 
+
+    const cuerpo = document.querySelector('.global');
+    cuerpo.classList.add('no-scroll');
+    cuerpo.style.borderRadius = '0';
 }
 
 function exit() {
+
     const elementoPantallaLogin = document.querySelector(".ingresar");
     elementoPantallaLogin.style.visibility = 'hidden';
     elementoPantallaLogin.style.opacity = '0';
@@ -70,5 +83,9 @@ function exit() {
 
     const palabraLogin = document.querySelector(".login p");
     palabraLogin.style.display = 'inline-block';
+
+    const cuerpo = document.querySelector('.global');
+    cuerpo.classList.remove('no-scroll');
+
 
 }
