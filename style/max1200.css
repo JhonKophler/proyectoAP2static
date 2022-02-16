@@ -1,0 +1,7 @@
+@import url(style.css);
+@import url(max800.css);
+@media (max-width:1300px) {
+    .global {
+        background-color: green;
+    }
+}

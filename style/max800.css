@@ -1,0 +1,17 @@
+@import url(style.css);
+@media (max-width: 800px) {
+    .global {
+        background-color: red;
+    }
+    .presentacion {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .card-contact {
+        width: 95%;
+    }
+}
