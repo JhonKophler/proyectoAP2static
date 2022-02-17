@@ -81,6 +81,9 @@
         margin: 1%;
         border-radius: 0;
     }
+    #mid>a {
+        margin-top: 3%;
+    }
     .formulario-contacto {
         flex-direction: column;
     }
