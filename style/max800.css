@@ -12,7 +12,7 @@
     .card-top {
         margin: 1rem 0.5rem 0.5rem 0.5rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
     }
     .foto-perfil {
