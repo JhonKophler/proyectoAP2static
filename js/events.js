@@ -47,6 +47,11 @@ function verSoft() {
     const textoSoftSkill = document.querySelector(".soft");
     textoSoftSkill.style.backgroundColor = 'var(--colorGris)';
     textoSoftSkill.style.color = 'var(--colorNegro)';
+    const imagen = document.getElementsByClassName('foto-perfil');
+    imagen[0].style.display = 'none';
+    imagen[1].style.display = 'inline';
+    imagen[1].style.border = '0.4rem solid var(--colorPrimario)';
+
 
 }
 
@@ -63,6 +68,10 @@ function verHard() {
     const textoSoftSkill = document.querySelector(".soft");
     textoSoftSkill.style.backgroundColor = 'var(--colorNegro)';
     textoSoftSkill.style.color = 'var(--colorLetraBlanca)';
+
+    const imagen = document.getElementsByClassName('foto-perfil');
+    imagen[0].style.display = 'inline';
+    imagen[1].style.display = 'none';
 }
 
 

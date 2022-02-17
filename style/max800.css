@@ -29,8 +29,10 @@
         flex-wrap: nowrap;
     }
     .foto-perfil {
-        width: 5rem;
-        border-radius: 0.7rem;
+        width: 10rem;
+        border-radius: 7rem;
+        border: 0.4rem solid var(--colorSecundario);
+        padding: 0.1rem;
     }
     .informacion {
         display: flex;
