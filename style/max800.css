@@ -1,26 +1,31 @@
 @import url(style.css);
 @media (max-width:576px) {
     * {
-        font-size: 22px;
+        font-size: 23px;
+    }
+    .contenedor-logo>h2 {
+        display: none;
     }
     .card-contact {
         width: 95%;
     }
     .card-top {
-        margin: 1rem 0 0.5rem 0;
+        margin: 1rem 0.5rem 0.5rem 0.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .foto-perfil {
+        width: 5rem;
+        border-radius: 0.7rem;
     }
     .informacion {
         display: flex;
         flex-direction: column;
         width: 90%;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
-        text-align: center;
-    }
-    .foto-perfil {
-        margin: 0.5rem 0.5rem;
-        width: 3rem;
-        border-radius: 0.5rem;
+        text-align: start;
     }
 }
 
