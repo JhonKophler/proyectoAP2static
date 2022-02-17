@@ -70,6 +70,29 @@
         width: 3rem;
         height: 3rem;
     }
+    .elemento-proyecto {
+        width: 100%;
+    }
+    .img-first {
+        width: 100%;
+    }
+    .thumbnails {
+        width: 22%;
+        margin: 1%;
+        border-radius: 0;
+    }
+    .formulario-contacto {
+        flex-direction: column;
+    }
+    .message-section {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .email-section {
+        width: 95%;
+        margin: 1rem;
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 800px) {
