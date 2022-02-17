@@ -1,7 +1,7 @@
 @import url(style.css);
 @media (max-width:576px) {
     * {
-        font-size: 20px;
+        font-size: 22px;
     }
     .card-contact {
         width: 95%;
