@@ -31,6 +31,9 @@ function copiado() {
 
 //=============================================================================//
 
+
+
+
 window.onload = verHard();
 
 function verSoft() {
@@ -47,11 +50,6 @@ function verSoft() {
     const textoSoftSkill = document.querySelector(".soft");
     textoSoftSkill.style.backgroundColor = 'var(--colorGris)';
     textoSoftSkill.style.color = 'var(--colorNegro)';
-    const imagen = document.getElementsByClassName('foto-perfil');
-    imagen[0].style.display = 'none';
-    imagen[1].style.display = 'inline';
-    imagen[1].style.border = '0.4rem solid var(--colorPrimario)';
-
 
 }
 
@@ -73,13 +71,6 @@ function verHard() {
     imagen[0].style.display = 'inline';
     imagen[1].style.display = 'none';
 }
-
-
-function disableScroll() {
-    window.scrollTo(-10000, -10000);
-}
-
-
 
 
 function login() {

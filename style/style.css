@@ -234,6 +234,7 @@ a:active {
     width: 0px;
     height: 0px;
     display: none;
+    color: #FFD700;
 }
 
 
@@ -488,6 +489,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 
 .content-works>i:hover {
