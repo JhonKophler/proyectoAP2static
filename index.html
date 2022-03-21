@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" media="(max-width:1300px)" href="style/max1200.css" />
     <link rel="stylesheet" media="(max-width: 800px)" href="style/max800.css" />
+    <link rel="stylesheet" href="style/splide-sea-green.min.css">
     <script defer src="js/events.js"></script>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Portfolio Juan Corso</title>
@@ -31,7 +32,7 @@
             <div class="redes-login">
                 <div class="redes">
                     <a href="https://www.instagram.com/jhonkophler/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/jhonkophler" target="_blank"></i><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/jhonkophler" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=100010528774946" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a><i id="btn-disc" class="fab fa-discord" onclick="copiado()"><p>jhonkophler#1876</p></i></a>
                     <!-- <div class="ventanaEmergente">Usuario copiado</div>-->
@@ -50,12 +51,12 @@
                     <span>Ingrese a la cuenta para modificar el contenido</span>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text">ingrese su email</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <input type="password" required class="form-control" id="exampleInputPassword1">
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
                 </form>
@@ -251,86 +252,118 @@
                         <div class="box-width">
                             <h3>Experiencias</h3>
                             <div class="content-works">
-                                <i class="fa-solid fa-angle-left"></i>
-                                <div class="elemento">
-                                    <div class="imagen">
-                                        <img class="logo-work" src="../img/empleos/faro.jpg" />
-                                        <div class="content-separador"></div>
-                                    </div>
-                                    <div class="info">
-                                        <h5>Back-end Developer</h5>
-                                        <span class="info-exp">Empresa</span>
-                                        <span class="info-exp">Duracion</span>
-                                        <span class="info-exp">Lugar de Trabajo</span>
+                                
+                                <div class="splide">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="elemento">
+                                                    <div class="imagen">
+                                                        <img class="logo-work" src="https://github.com/JhonKophler/src-img-proyect-final/blob/master/empleos/faro.jpg?raw=true" />
+                                                        <div class="content-separador"></div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Back-end Developer</h5>
+                                                        <span class="info-exp">Empresa</span>
+                                                        <span class="info-exp">Duracion</span>
+                                                        <span class="info-exp">Lugar de Trabajo</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="splide__slide">
+                                                <div class="elemento">
+                                                    <div class="imagen">
+                                                        <img class="logo-work" src="https://raw.githubusercontent.com/JhonKophler/src-img-proyect-final/master/empleos/logo2.webp" />
+                                                        <div class="content-separador"></div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Data-Analist</h5>
+                                                        <span class="info-exp">Empresa</span>
+                                                        <span class="info-exp">Duracion</span>
+                                                        <span class="info-exp">Lugar de Trabajo</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="elemento">
-                                    <div class="imagen">
-                                        <img class="logo-work" src="../img/empleos/logo2.webp" />
-                                        <div class="content-separador"></div>
-                                    </div>
-                                    <div class="info">
-                                        <h5>Data-Analist</h5>
-                                        <span class="info-exp">Empresa</span>
-                                        <span class="info-exp">Duracion</span>
-                                        <span class="info-exp">Lugar de Trabajo</span>
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-angle-right"></i>
+
                             </div>
                         </div>
                         <div class="box-width estudios">
                             <h3>Educacion Profesional</h3>
                             <div class="content-works">
-                                <div class="elemento">
-                                    <div class="imagen">
-                                        <img class="logo-work" src="../img/estudios/ap2.jpg" />
-                                        <div class="content-separador"></div>
-                                    </div>
-                                    <div class="info">
-                                        <h5>Developer Fullstack Web Jr.</h5>
-                                        <span class="info-exp">Argentina Programa Nº2</span>
-                                        <span class="info-exp">2021-2022</span>
+                                <div class="splide educacionProfesional">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="elemento">
+                                                    <div class="imagen">
+                                                        <img class="logo-work" src="../img/estudios/ap2.jpg" />
+                                                        <div class="content-separador"></div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Developer Fullstack Web Jr.</h5>
+                                                        <span class="info-exp">Argentina Programa Nº2</span>
+                                                        <span class="info-exp">2021-2022</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="splide__slide">
+                                                <div class="elemento">
+                                                    <div class="imagen">
+                                                        <img class="logo-work" src="../img/estudios/utn.jpg" />
+                                                        <div class="content-separador"></div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Analista Universitario de Sistemas Informaticos</h5>
+                                                        <span class="info-exp">UTN</span>
+                                                        <span class="info-exp">2021-Actualmente</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="elemento">
-                                    <div class="imagen">
-                                        <img class="logo-work" src="../img/estudios/utn.jpg" />
-                                        <div class="content-separador"></div>
-                                    </div>
-                                    <div class="info">
-                                        <h5>Analista Universitario de Sistemas Informaticos</h5>
-                                        <span class="info-exp">UTN</span>
-                                        <span class="info-exp">2021-Actualmente</span>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="box-width">
                             <h3>Cursos Realizados</h3>
                             <div class="content-works">
-                                <i class="fa-solid fa-angle-left"></i>
-                                <div class="elemento">
-                                    <div class="imagen img-cur">
-                                        <img class="logo-work" src="../img/cursos/udemy.png" />
-                                        <div class="content-separador"></div>
-                                    </div>
-                                    <div class="info">
-                                        <h5>Udemy</h5>
-                                        <span class="info-exp">Angular js - BootsTrap 5 - Javascript - Typescript - APIs</span>
+                                <div class="splide cursosRealizados">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="elemento">
+                                                    <div class="imagen img-cur">
+                                                        <img class="logo-work" src="../img/cursos/udemy.png" />
+                                                        <div class="content-separador"></div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Udemy</h5>
+                                                        <span class="info-exp">Angular js - BootsTrap 5 - Javascript - Typescript - APIs</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="splide__slide">
+                                                <div class="elemento">
+                                                    <div class="imagen img-cur">
+                                                        <img class="logo-work" src="../img/cursos/coursera.png" />
+                                                        <div class="content-separador"></div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h5>Coursera</h5>
+                                                        <span class="info-exp">Ciencias de datos - Base de Datos Relacionales - IA con Python</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="elemento">
-                                    <div class="imagen img-cur">
-                                        <img class="logo-work" src="../img/cursos/coursera.png" />
-                                        <div class="content-separador"></div>
-                                    </div>
-                                    <div class="info">
-                                        <h5>Coursera</h5>
-                                        <span class="info-exp">Ciencias de datos - Base de Datos Relacionales - IA con Python</span>
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-angle-right"></i>
                             </div>
                         </div>
                     </div>
@@ -370,27 +403,28 @@
                     <img src="..//img/email.jpg" alt="">
                     <p>Si te gusta mi trabajo puedes enviarme un mensaje.</p>
                 </div>
-                <form class="email-section">
+                <form id="form" class="email-section" method="POST">
                     <div class="form-group">
                         <label for="nombre-contacto"></label>
-                        <input type="text" class="form-control" id="nombre-contacto" placeholder="Nombre">
+                        <input type="text" name="nombre" required class="form-control" id="nombre-contacto" placeholder="Nombre">
                     </div>
                     <div class="form-group">
                         <label for="email-contacto"></label>
-                        <input type="text" class="form-control" id="email-contacto" placeholder="E-mail">
+                        <input type="text" name="email" required class="form-control" id="email-contacto" placeholder="E-mail">
                     </div>
                     <div class="form-group">
                         <label for="asunto-contacto"></label>
-                        <input type="text" class="form-control" id="asunto-contacto" placeholder="Asunto">
+                        <input type="text" name="asunto" required class="form-control" id="asunto-contacto" placeholder="Asunto">
                     </div>
                     <div class="mb-2">
                         <label for="textarea"></label>
                         <div class="text-padre">
-                            <textarea class="form-control" id="textarea" placeholder="Mensaje"></textarea>
-                            <a class="btn btn-primary" href="#" role="button">enviar</a>
+                            <textarea name="contenido-texto" required class="form-control" id="textarea" placeholder="Mensaje"></textarea>
+                            <button type="submit" class="btn btn-primary" href="" role="button">enviar</button>
                         </div>
                     </div>
                 </form>
+                <a href="mailto:juanadriancorso94@gmail.com"></a>
             </section>
 
             <!--  Footer -->
@@ -404,7 +438,39 @@
         </content>
     </section>
     <script src="js/slider.js"></script>
+    <script src="js/email.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/splide.min.js"></script>
+    <script>
+
+        Splide.defaults = {
+            type   : 'loop',
+          perPage: 2,
+          focus    : 'rigth',
+          pagination:false,
+          speed: number = 1000,
+          breakpoints: {
+            1300: {
+              perPage: 2,
+            },
+            800: {
+              perPage: 2,
+            },
+            550: {
+              perPage: 1,
+            },
+          },
+        }
+
+        var splide = new Splide( '.splide', Splide.defaults  );
+        var splideDos = new Splide( '.educacionProfesional',Splide.defaults );
+        var splideTres = new Splide( '.cursosRealizados',Splide.defaults );
+        
+        splide.mount();
+        splideDos.mount();
+        splideTres.mount();
+        
+        </script>
 </body>
 
 </html>

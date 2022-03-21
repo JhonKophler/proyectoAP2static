@@ -1,5 +1,5 @@
 @import url(style.css);
-@media (max-width:576px) {
+@media (max-width: 800px) {
     * {
         font-size: 23px;
     }
@@ -49,11 +49,11 @@
     .color-back {
         border-radius: 0;
     }
-    .content-works {
+    /* .content-works {
         display: flex;
         flex-direction: row;
         justify-content: center;
-    }
+    } */
     .elemento {
         display: flex;
         margin: 0.3rem;
@@ -123,7 +123,7 @@
         margin: 0.3rem;
     }
 }
-
+/* 
 @media (max-width: 800px) {
     .presentacion {
         display: flex;
@@ -132,4 +132,4 @@
         align-content: center;
         align-items: center;
     }
-}
+} */

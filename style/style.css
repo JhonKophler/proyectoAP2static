@@ -479,10 +479,10 @@ label {
     font-size: 0.8rem;
 }
 
-.content-works {
-    display: flex;
-    flex-direction: row;
-}
+/* .content-works {
+    width: 100%;
+    position: relative;
+} */
 
 .content-works>i {
     color: var(--colorLetraNegra);
@@ -502,7 +502,6 @@ label {
 }
 
 .elemento {
-    width: 50%;
     background: var(--colorDegradeBlanco);
     border-radius: 0 1.5rem 0 1.5rem;
     display: flex;
