@@ -80,7 +80,6 @@
                 <div class="card-contact">
                     <div class="card-top">
                         <img class="foto-perfil" src="../img/perfil.jpeg" alt="foto-de-perfil" />
-                        <img class="foto-perfil" src="../img/perfil2.jpg" alt="foto-de-perfil" />
                         <div class="informacion">
                             <h1>Juan Adrian Corso</h1>
                             <span>28 años</span>
@@ -437,40 +436,10 @@
 
         </content>
     </section>
-    <script src="js/slider.js"></script>
     <script src="js/email.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/splide.min.js"></script>
-    <script>
-
-        Splide.defaults = {
-            type   : 'loop',
-          perPage: 2,
-          focus    : 'rigth',
-          pagination:false,
-          speed: number = 1000,
-          breakpoints: {
-            1300: {
-              perPage: 2,
-            },
-            800: {
-              perPage: 2,
-            },
-            550: {
-              perPage: 1,
-            },
-          },
-        }
-
-        var splide = new Splide( '.splide', Splide.defaults  );
-        var splideDos = new Splide( '.educacionProfesional',Splide.defaults );
-        var splideTres = new Splide( '.cursosRealizados',Splide.defaults );
-        
-        splide.mount();
-        splideDos.mount();
-        splideTres.mount();
-        
-        </script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>

@@ -115,13 +115,13 @@
   outline: none;
 }
 .splide__arrow--prev {
-  left: 1em;
+  left: 0;
 }
 .splide__arrow--prev svg {
   transform: scaleX(-1);
 }
 .splide__arrow--next {
-  right: 1em;
+  right: 0;
 }
 .splide__pagination {
   bottom: 1em;
@@ -340,5 +340,5 @@
   right: -2.5em;
 }
 .splide {
-  padding: 0 3em;
+  padding: 0 1rem 0 1rem;
 }

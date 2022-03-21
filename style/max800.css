@@ -55,6 +55,7 @@
         justify-content: center;
     } */
     .elemento {
+        height: 95%;
         display: flex;
         margin: 0.3rem;
         flex-direction: column;
