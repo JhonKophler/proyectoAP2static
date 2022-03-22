@@ -6,14 +6,11 @@ Splide.defaults = {
   pagination:false,
   speed: number = 1000,
   breakpoints: {
-    1300: {
-      perPage: 2,
-    },
-    800: {
-      perPage: 2,
+    1550: {
+      perPage: 1,
     },
     550: {
-      perPage: 2,
+      perPage: 1,
     },
   },
 }
