@@ -1,6 +1,9 @@
 @import url(style.css);
 @import url(max800.css);
 @media ( max-width:1550px) and (min-width: 801px){
+    menu a{
+        font-size: 12px;
+    }
     .exp{
         display: inline;
     }
@@ -47,6 +50,7 @@
     }
 
     .box-width{
+        text-align: center;
         width: 28%;
     }
     .elemento {
