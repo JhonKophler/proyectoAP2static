@@ -1,0 +1,62 @@
+@import url(style.css);
+@import url(max800.css);
+@media ( max-width:1550px) and (min-width: 801px){
+    .presentacion{
+        flex-direction: column;
+    }
+    .card-contact{
+        width: 100%;
+        display: flex;
+        
+    }
+    .informacion{
+        text-align: center;
+        width: 85%;
+    }
+    .foto-perfil {
+        width: 8rem;
+    }
+    .card-bot{
+        padding: 1rem;
+    }
+    #card-bot{
+        margin-bottom: 0;
+    }
+    .content-separador{
+        display: none;
+    }
+    #card-hard,#card-soft{
+        margin: 0;
+    }
+    .card-info{
+        border-radius: 1rem;
+        width: 100%;
+    }
+    .color-back{
+        border-radius: 1rem;
+    }
+    .card-info img{
+        margin: .5rem;
+        width: 3rem;
+    }
+    .elemento {
+        height: 95%;
+        margin: 0.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        border-radius: 1rem;
+        text-align: center;
+    }
+
+    .formulario-contacto{
+        width: 85%;
+    }
+    .message-section{
+        margin: 1rem;
+    }
+    .email-section{
+        width: 95%;
+    }
+}
