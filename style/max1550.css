@@ -34,6 +34,9 @@
     #card-hard,#card-soft{
         margin: 0;
     }
+    .info{
+        padding: 0.5rem;
+    }
     .card-info{
         border-radius: 1rem;
         width: 100%;
