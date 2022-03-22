@@ -7,6 +7,9 @@
         padding: 0.1rem 1rem;
         font-weight: 300;
     }
+    .exp{
+        display: inline;
+    }
     .contenedor-logo>h2 {
         display: none;
     }

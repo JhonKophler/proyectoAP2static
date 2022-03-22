@@ -1,6 +1,9 @@
 @import url(style.css);
 @import url(max800.css);
 @media ( max-width:1550px) and (min-width: 801px){
+    .exp{
+        display: inline;
+    }
     .presentacion{
         flex-direction: column;
     }
