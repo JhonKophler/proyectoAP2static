@@ -483,10 +483,6 @@ label {
     font-size: 0.8rem;
 }
 
-/* .content-works {
-    width: 100%;
-    position: relative;
-} */
 
 .content-works>i {
     color: var(--colorLetraNegra);
@@ -564,9 +560,6 @@ label {
     font-weight: 300;
 }
 
-/* .estudios {
-    padding: 0rem 1rem;
-} */
 
 .img-cur>img {
     width: 3rem;
@@ -598,40 +591,32 @@ label {
 
 .content-proyect {
     margin-top:20px;
-}
-
-.elemento-proyecto h6 {
-    font-size: 0.75rem;
-    font-weight: 400;
-    margin: 0;
-    text-align: center;
+    width: 100%;
 }
 
 .elemento-proyecto {
     padding-top: 0.3rem;
     box-shadow: var(--sombra);
-    height:80vh;
 }
-
-.elemento-proyecto:hover {
-    background-color: var(--colorNegro);
-    cursor: pointer;
-    transition: var(--anim);
+.elemento-proyecto h6 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
 } 
-
- 
 
 .info-desarrollo {
     font-size: 0.56rem;
     font-weight: lighter;
-    justify-content: center;
     width: 90%;
     line-height: 0.7rem;
     text-align: center;
 }
 
-.activado {
-    background-color: var(--colorNegro);
+
+.grid img{
+    margin: 10px;
+    width: 35%;
 }
 
 /*----------------------------------*/

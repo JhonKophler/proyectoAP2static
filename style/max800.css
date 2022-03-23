@@ -91,20 +91,11 @@
     .elemento-proyecto {
         width: 100%;
     }
-    .img-first {
-        width: 100%;
+
+    .grid img{
+        width: 50vw;
     }
-    .thumbnails {
-        width: 22%;
-        margin: 1%;
-        border-radius: 0;
-    }
-    #mid {
-        width: 100%;
-    }
-    #mid>a {
-        margin-top: 3%;
-    }
+
     .formulario-contacto {
         flex-direction: column;
         width: 100%;

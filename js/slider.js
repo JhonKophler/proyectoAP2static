@@ -16,7 +16,7 @@ Splide.defaults = {
 }
 
 
-var splide = new Splide( '.splide', Splide.defaults  );
+var splide = new Splide( '.working', Splide.defaults  );
 var splideDos = new Splide( '.educacionProfesional',Splide.defaults );
 var splideTres = new Splide( '.cursosRealizados',Splide.defaults );
 var proyectosSlider = new Splide( '.proyectos-slider',{
@@ -25,6 +25,7 @@ var proyectosSlider = new Splide( '.proyectos-slider',{
   focus    : 'center',
   gap:'4rem',
 } ).mount();
+
 
 splide.mount();
 splideDos.mount();
