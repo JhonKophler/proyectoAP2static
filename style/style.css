@@ -677,6 +677,9 @@ label {
     text-align: center;
 }
 
+.activado {
+    background-color: var(--colorNegro);
+}
 
 /*----------------------------------*/
 

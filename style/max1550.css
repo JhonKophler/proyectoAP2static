@@ -44,12 +44,17 @@
     .color-back{
         border-radius: 1rem;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: space-around;
+        align-content: flex-end;
+    }
+    .info{
+        margin: 0;
+        padding: .1rem;
     }
     .card-info img{
-        margin: .5rem;
-        width: 3rem;
+        margin: 0;
+        width: 4rem;
     }
 
     .box-width{
@@ -57,14 +62,15 @@
         width: 28%;
     }
     .elemento {
-        height: 95%;
+        height: 290px;
         margin: 0.3rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        align-content: center;
         border-radius: 1rem;
         text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
     }
 
     .formulario-contacto{

@@ -109,31 +109,3 @@ function exit() {
 
 }
 
-
-/* function cargaDePorcentajes() {
-
-
-
-    const elementoBarra = document.getElementsByClassName('elemento-barra');
-    const porProgressBar = document.getElementsByClassName('progress-bar');
-    console.log(listaDesdeLocal);
-
-    for (let i = 0; i < elementoBarra.length; i++) {
-
-
-        let h4 = elementoBarra[i].children[0].children[0].textContent;
-        let porc = elementoBarra[i].children[0].children[1].textContent;
-        elementoBarra[i].children[1].children[0].style.color = 'red';
-
-        console.log(h4);
-        console.log(porc);
-        console.log("================");
-
-
-    }
-
- */
-
-/* console.log(porcentajes[0].html); */
-
-/* } */
