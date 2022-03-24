@@ -4,7 +4,7 @@ Splide.defaults = {
   perPage: 2,
   focus    : 'rigth',
   pagination:false,
-  speed: number = 3000,
+  speed: number = 2000,
   breakpoints: {
     1550: {
       perPage: 1,
@@ -24,9 +24,18 @@ var proyectosSlider = new Splide( '.proyectos-slider',{
   perPage: 1,
   focus    : 'center',
   gap:'4rem',
+  breakpoints: {
+    800: {
+      arrows : false,
+    },
+  },
 } ).mount();
 
 
 splide.mount();
 splideDos.mount();
 splideTres.mount();
+
+
+const contorno = document.getElementsByClassName('splide__track');
+contorno[3].style.padding = '0 1rem';
