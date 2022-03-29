@@ -1,11 +1,21 @@
 @import url(style.css);
 @import url(max800.css);
 @media ( max-width:1550px) and (min-width: 801px){
+    menu {
+        display: flex;
+        position: sticky;
+        top: 0.3rem;
+        margin: 0.3rem;
+        z-index: 20;
+        align-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+      }
     menu a{
         font-size: 12px;
     }
     .exp{
-        display: inline;
+        display: block;
     }
     .presentacion{
         flex-direction: column;
@@ -13,7 +23,6 @@
     .card-contact{
         width: 100%;
         display: flex;
-        
     }
     .informacion{
         text-align: center;

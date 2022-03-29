@@ -1,24 +1,3 @@
-/* var porcentajes = {
-
-    html: '69%',
-    css: '52%',
-    javascript: '85%',
-    bootstrap: '55%',
-    c: '90%',
-    typescript: '63%',
-    angular: '60%',
-    trabajo: '70%',
-    resolucion: '48%',
-    ingles: '60%',
-    scrum: '65%',
-    lid: '55%',
-    proyeccion: '85%',
-
-}
-
-localStorage.setItem("listaPorcentajes", JSON.stringify(porcentajes));
-var listaDesdeLocal = JSON.parse(localStorage.getItem("porcentajes")); */
-
 function copiado() {
 
     var copyText = document.getElementById("btn-disc").textContent;
@@ -30,9 +9,6 @@ function copiado() {
 }
 
 //=============================================================================//
-
-
-
 
 window.onload = verHard();
 
@@ -53,6 +29,10 @@ function verSoft() {
 
 }
 
+
+//=============================================================================//
+
+
 function verHard() {
     const elementoHardSkills = document.querySelector("#card-hard");
     const elementoSoftSkills = document.querySelector("#card-soft");
@@ -69,8 +49,10 @@ function verHard() {
 
     const imagen = document.getElementsByClassName('foto-perfil');
     imagen[0].style.display = 'inline';
-    imagen[1].style.display = 'none';
 }
+
+
+//=============================================================================//
 
 
 function login() {
@@ -92,6 +74,10 @@ function login() {
 
 }
 
+
+//=============================================================================//
+
+
 function exit() {
 
     const elementoPantallaLogin = document.querySelector(".ingresar");
@@ -109,3 +95,25 @@ function exit() {
 
 }
 
+// ==============================================================================//
+
+/*   Menu Desplegable  */
+const body = document.querySelector('body');
+const btnOjoMenu = document.querySelector('#ojo');
+const menu = document.querySelector('#menu-palabras');
+btnOjoMenu.addEventListener(window.matchMedia("(min-width: 800px)").matches, () => {
+    body.style.backgroundColor = "red";
+    if (window.matchMedia("(min-width: 800px)").matches) {
+        let classOjo = btnOjoMenu.getAttribute('class');
+        menu.classList.toggle('ocultar');
+        if (classOjo === 'fa-solid fa-eye') {
+            btnOjoMenu.setAttribute('class', 'fa-solid fa-eye-slash');
+        } else {
+            btnOjoMenu.setAttribute('class', 'fa-solid fa-eye');
+        }
+        
+    }else{
+        
+    }
+
+});

@@ -36,6 +36,7 @@
     font-family: "Outfit", sans-serif;
     font-size: 28px;
     color: var(--colorLetraBlanca);
+    user-select: none;
 }
 
 html {
@@ -63,7 +64,7 @@ nav {
 }
 
 section [id] {
-    scroll-margin-top: 1rem;
+    scroll-margin-top: -0.5rem;
 }
 
 .no-scroll {
@@ -219,16 +220,19 @@ a {
     transition: var(--anim);
 }
 
+.redes-login p:hover{
+    color: var(--colorLetraNegra)!important;
+}
 a:hover {
-    background: var(--colorSecundario);
+    background: var(--colorPrimario) !important;
     cursor: pointer;
-    color: var(--colorLetraBlanca);
+    color: var(--colorLetraNegra)!important;
 }
 
-a:active {
-    color: var(--colorPrimario);
-    background: var(--colorNegro);
-}
+/* a:active {
+    color: var(--colorPrimario) !important;
+    background: var(--colorNegro) !important;
+} */
 
 .spinner-border {
     width: 0px;
@@ -237,57 +241,85 @@ a:active {
     color: #FFD700;
 }
 
-
 /* -----------------------------*/
 
 
 /* Menu */
 
-menu {
-    display: flex;
-    justify-content: flex-end;
-    position: sticky;
-    top: 0.3rem;
-    left: 76%;
-    margin: 0.3rem;
-    z-index: 20;
-    width: 19%;
+.ocultar{
+   display: none;
 }
 
-menu>a {
-    padding: 0.2rem 1.6rem;
-    font-weight: 300;
+#navbar {
+    position:sticky;
+    top: 5rem;
+    margin: 0.3rem;
+    z-index: 20;
+}
+
+menu {
+    display: flex; 
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+menu a {
+    color: var(--colorLetraBlanca) !important;
+    padding: 0.2rem 1.6rem !important;
+    font-weight: 300 !important;
 }
 
 
 /* Botones Menu */
 
+#ojo{
+    border-radius:50%;
+    padding: .3rem .9rem;
+    display: flex;
+    justify-content: center;
+    color: var(--colorLetraBlanca);
+    background-color: var(--colorNegro);
+}
+
+#ojo:hover{
+    cursor: pointer;
+}
+
 .top {
-    border-radius: 1rem 0 0 1rem;
-    border-right: 0.09rem solid;
+    border-radius: 1rem 0 0 1rem !important;
+    border-right: 0.09rem solid !important;
 }
 
 .mid {
-    border-color: var(--colorBlanco);
-    border-radius: 0;
-    border-left: 0.09rem solid;
-    border-right: 0.09rem solid;
-}
-
-.exp{
-    display: none;
+    border-color: var(--colorBlanco) !important;
+    border-radius: 0 !important;
+    border-left: 0.09rem solid !important;
+    border-right: 0.09rem solid !important;
 }
 
 .low {
-    border-radius: 0 1rem 1rem 0;
-    border-left: 0.09rem solid;
+    border-radius: 0 1rem 1rem 0 !important;
+    border-left: 0.09rem solid !important;
 }
+.exp{
+    display: none; 
+}
+
 
 .top,
 .mid,
 .low {
-    background-color: var(--colorNegro);
+    background-color: var(--colorNegro) !important;
 }
+
+/* Modificacion a BT */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--colorBlanco) !important;
+    background-color: var(--colorSecundario) !important;
+}
+
 
 
 /* Cajas Presentacion */
@@ -381,7 +413,7 @@ label {
 }
 
 .hard:hover {
-    background-color: var(--colorNegro);
+    background-color: var(--colorSecundario)!important;
     color: var(--colorLetraBlanca);
     cursor: pointer;
 }
@@ -398,7 +430,7 @@ label {
 }
 
 .soft:hover {
-    background-color: var(--colorNegro);
+    background-color: var(--colorPrimario)!important;
     color: var(--colorLetraBlanca);
     cursor: pointer;
 }

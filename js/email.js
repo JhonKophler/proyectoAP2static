@@ -1,4 +1,4 @@
-const formulario = document.querySelector('#form');
+/* const formulario = document.querySelector('#form');
 console.log(formulario);
 
 
@@ -14,4 +14,4 @@ function subirDatos(event) {
     console.log(form.get('asunto'))
     console.log(form.get('contenido-texto'))
 
-}
+} */

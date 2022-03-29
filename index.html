@@ -18,10 +18,10 @@
     <title>Portfolio Juan Corso</title>
 </head>
 
-<body>
+<body data-bs-target="#navbar" data-bs-spy="scroll">
 
     <!-- Global es el contenido completo de la pagina -->
-    <section id="jc" class="global">
+    <section id="jc" class="global" >
 
         <!-- Logo-Header y Redes sociales -->
         <nav>
@@ -66,11 +66,23 @@
         <!--<div id="muestraUserDiscord">usuariocopiado</div>-->
 
         <!-- Menu de navegacion( top-mid-low) -->
-        <menu>
-            <a href="#jc" class="top">JC</a>
-            <a href="#exp" class="mid exp">experiencias</a>
-            <a href="#mid" class="mid">proyectos</a>
-            <a href="#low" class="low">email</a>
+        
+        <menu id="navbar">
+            <ul id="menu-palabras" class="nav nav-pills flex-nowrap">
+                <li class="nav-item">
+                    <a href="#jc" class="top nav-link">JC</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#exp" class="mid exp nav-link">experiencias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#mid" class="mid nav-link">proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#low" class="low nav-link">email</a>
+                </li>
+            </ul>
+            <i id="ojo" class="fa-solid fa-eye"></i>
         </menu>
 
         <content>
