@@ -1,6 +1,9 @@
+const d = document;
+const w = window;
+
 function copiado() {
 
-    var copyText = document.getElementById("btn-disc").textContent;
+    var copyText = d.getElementById("btn-disc").textContent;
 
     navigator.clipboard.writeText(copyText);
 
@@ -10,20 +13,20 @@ function copiado() {
 
 //=============================================================================//
 
-window.onload = verHard();
+w.onload = verHard();
 
 function verSoft() {
 
-    const elementoSoftSkills = document.querySelector("#card-soft");
-    const elementoHardSkills = document.querySelector("#card-hard");
+    const elementoSoftSkills = d.querySelector("#card-soft");
+    const elementoHardSkills = d.querySelector("#card-hard");
     elementoHardSkills.style.display = "none";
     elementoSoftSkills.style.display = "inline";
 
-    const textoHardSkill = document.querySelector(".hard");
+    const textoHardSkill = d.querySelector(".hard");
     textoHardSkill.style.backgroundColor = 'var(--colorNegro)';
     textoHardSkill.style.color = 'var(--colorLetraBlanca)';
 
-    const textoSoftSkill = document.querySelector(".soft");
+    const textoSoftSkill = d.querySelector(".soft");
     textoSoftSkill.style.backgroundColor = 'var(--colorGris)';
     textoSoftSkill.style.color = 'var(--colorNegro)';
 
@@ -34,20 +37,20 @@ function verSoft() {
 
 
 function verHard() {
-    const elementoHardSkills = document.querySelector("#card-hard");
-    const elementoSoftSkills = document.querySelector("#card-soft");
+    const elementoHardSkills = d.querySelector("#card-hard");
+    const elementoSoftSkills = d.querySelector("#card-soft");
     elementoSoftSkills.style.display = "none";
     elementoHardSkills.style.display = "inline";
 
-    const textoHardSkill = document.querySelector(".hard");
+    const textoHardSkill = d.querySelector(".hard");
     textoHardSkill.style.backgroundColor = 'var(--colorGris)';
     textoHardSkill.style.color = 'var(--colorNegro)';
 
-    const textoSoftSkill = document.querySelector(".soft");
+    const textoSoftSkill = d.querySelector(".soft");
     textoSoftSkill.style.backgroundColor = 'var(--colorNegro)';
     textoSoftSkill.style.color = 'var(--colorLetraBlanca)';
 
-    const imagen = document.getElementsByClassName('foto-perfil');
+    const imagen = d.getElementsByClassName('foto-perfil');
     imagen[0].style.display = 'inline';
 }
 
@@ -57,18 +60,18 @@ function verHard() {
 
 function login() {
 
-    const elementoPantallaLogin = document.querySelector(".ingresar");
+    const elementoPantallaLogin = d.querySelector(".ingresar");
     elementoPantallaLogin.style.visibility = 'visible';
     elementoPantallaLogin.style.opacity = '1';
 
-    const spinner = document.querySelector(".spinner-border");
+    const spinner = d.querySelector(".spinner-border");
     spinner.style.display = 'inline-block';
 
-    const palabraLogin = document.querySelector(".login p");
+    const palabraLogin = d.querySelector(".login p");
     palabraLogin.style.display = 'none';
 
 
-    const cuerpo = document.querySelector('.global');
+    const cuerpo = d.querySelector('.global');
     cuerpo.classList.add('no-scroll');
     cuerpo.style.borderRadius = '0';
 
@@ -80,17 +83,17 @@ function login() {
 
 function exit() {
 
-    const elementoPantallaLogin = document.querySelector(".ingresar");
+    const elementoPantallaLogin = d.querySelector(".ingresar");
     elementoPantallaLogin.style.visibility = 'hidden';
     elementoPantallaLogin.style.opacity = '0';
 
-    const spinner = document.querySelector(".spinner-border");
+    const spinner = d.querySelector(".spinner-border");
     spinner.style.display = 'none';
 
-    const palabraLogin = document.querySelector(".login p");
+    const palabraLogin = d.querySelector(".login p");
     palabraLogin.style.display = 'inline-block';
 
-    const cuerpo = document.querySelector('.global');
+    const cuerpo = d.querySelector('.global');
     cuerpo.classList.remove('no-scroll');
 
 }
@@ -98,22 +101,39 @@ function exit() {
 // ==============================================================================//
 
 /*   Menu Desplegable  */
-const body = document.querySelector('body');
-const btnOjoMenu = document.querySelector('#ojo');
-const menu = document.querySelector('#menu-palabras');
-btnOjoMenu.addEventListener(window.matchMedia("(min-width: 800px)").matches, () => {
-    body.style.backgroundColor = "red";
-    if (window.matchMedia("(min-width: 800px)").matches) {
-        let classOjo = btnOjoMenu.getAttribute('class');
-        menu.classList.toggle('ocultar');
-        if (classOjo === 'fa-solid fa-eye') {
-            btnOjoMenu.setAttribute('class', 'fa-solid fa-eye-slash');
-        } else {
-            btnOjoMenu.setAttribute('class', 'fa-solid fa-eye');
-        }
-        
-    }else{
-        
-    }
+const body = d.querySelector('body');
+const btnOjoMenu = d.querySelector('#ojo');
+const menu = d.querySelector('#menu-palabras');
+let mediaQuery = w.matchMedia('(max-width:  1550px)');
 
+mediaQuery.onchange = () => {
+    if (!mediaQuery.matches) {
+        
+        btnOjoMenu.setAttribute('class', 'fa-solid fa-eye');
+        btnOjoMenu.style.display = "none";
+        menu.style.display = "flex";
+        
+    } 
+    else{
+
+        btnOjoMenu.style.display = "flex";
+        menu.style.display = "none";
+
+    }
+};
+
+btnOjoMenu.addEventListener('click', () => {
+    classOjo = btnOjoMenu.getAttribute('class');
+    if (classOjo === 'fa-solid fa-eye') {
+        console.log("ojo cerrado");
+        btnOjoMenu.classList.remove('fa-eye')
+        btnOjoMenu.classList.add('fa-xmark');
+        menu.style.display = "flex";
+    }
+    else{
+        console.log("ojo abierto");
+        btnOjoMenu.classList.remove('fa-xmark');
+        btnOjoMenu.classList.add('fa-eye');
+        menu.style.display = "none";
+    }
 });

@@ -91,8 +91,8 @@ h4 {
 /* Caja Global */
 
 content {
+    margin-top: 1rem;
     position: relative;
-    top: -1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -251,10 +251,12 @@ a:hover {
 }
 
 #navbar {
-    position:sticky;
-    top: 5rem;
+    position:fixed;
+    right:.1rem;
+    top: 1.65rem;
     margin: 0.3rem;
-    z-index: 20;
+    z-index: 10;
+    transition: var(--anim);
 }
 
 menu {
@@ -274,16 +276,7 @@ menu a {
 /* Botones Menu */
 
 #ojo{
-    border-radius:50%;
-    padding: .3rem .9rem;
-    display: flex;
-    justify-content: center;
-    color: var(--colorLetraBlanca);
-    background-color: var(--colorNegro);
-}
-
-#ojo:hover{
-    cursor: pointer;
+    display: none;
 }
 
 .top {

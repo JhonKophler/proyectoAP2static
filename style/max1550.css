@@ -1,94 +1,97 @@
 @import url(style.css);
 @import url(max800.css);
-@media ( max-width:1550px) and (min-width: 801px){
-    menu {
-        display: flex;
-        position: sticky;
-        top: 0.3rem;
-        margin: 0.3rem;
-        z-index: 20;
-        align-content: center;
-        align-items: flex-end;
-        flex-direction: column;
-      }
-    menu a{
-        font-size: 12px;
-    }
-    .exp{
-        display: block;
-    }
-    .presentacion{
-        flex-direction: column;
-    }
-    .card-contact{
-        width: 100%;
-        display: flex;
-    }
-    .informacion{
-        text-align: center;
-        width: 85%;
-    }
-    .foto-perfil {
-        width: 8rem;
-    }
-    .card-bot{
-        padding: 1rem;
-    }
-    #card-bot{
-        margin-bottom: 0;
-    }
-    .content-separador{
+@media (max-width: 1550px) and (min-width: 801px) {
+    .ocultar{
         display: none;
-    }
-    #card-hard,#card-soft{
-        margin: 0;
-    }
-    .info{
-        padding: 0.5rem;
-    }
-    .card-info{
-        border-radius: 1rem;
-        width: 100%;
-    }
-    .color-back{
-        border-radius: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        align-content: flex-end;
-    }
-    .info{
-        margin: 0;
-        padding: .1rem;
-    }
-    .card-info img{
-        margin: 0;
-        width: 4rem;
-    }
+     }
+  #ojo { 
+    display: flex;
+    border-radius: 50%;
+    padding: 0.3rem 0.9rem;
+    justify-content: center;
+    color: var(--colorLetraBlanca);
+    background-color: var(--colorNegro);
+  }
 
-    .box-width{
-        text-align: center;
-        width: 28%;
-    }
-    .elemento {
-        height: 290px;
-        margin: 0.3rem;
-        display: flex;
-        flex-direction: column;
-        border-radius: 1rem;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }
+  #ojo:hover {
+    cursor: pointer;
+  }
+  .exp {
+    display: block;
+  }
+  .presentacion {
+    flex-direction: column;
+  }
+  .card-contact {
+    width: 100%;
+    display: flex;
+  }
+  .informacion {
+    text-align: center;
+    width: 85%;
+  }
+  .foto-perfil {
+    width: 8rem;
+  }
+  .card-bot {
+    padding: 1rem;
+  }
+  #card-bot {
+    margin-bottom: 0;
+  }
+  .content-separador {
+    display: none;
+  }
+  #card-hard,
+  #card-soft {
+    margin: 0;
+  }
+  .info {
+    padding: 0.5rem;
+  }
+  .card-info {
+    border-radius: 1rem;
+    width: 100%;
+  }
+  .color-back {
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: flex-end;
+  }
+  .info {
+    margin: 0;
+    padding: 0.1rem;
+  }
+  .card-info img {
+    margin: 0;
+    width: 4rem;
+  }
 
-    .formulario-contacto{
-        width: 85%;
-    }
-    .message-section{
-        margin: 1rem;
-    }
-    .email-section{
-        width: 95%;
-    }
+  .box-width {
+    text-align: center;
+    width: 28%;
+  }
+  .elemento {
+    height: 290px;
+    margin: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .formulario-contacto {
+    width: 85%;
+  }
+  .message-section {
+    margin: 1rem;
+  }
+  .email-section {
+    width: 95%;
+  }
 }
