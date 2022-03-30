@@ -105,8 +105,14 @@
     border-radius: 1rem;
   }
   .box-width > h3 {
+    font-size: 0.7rem;
     text-align: center;
   }
+
+  .box-width  h5 {
+    font-size: .8rem;
+  }
+
   .imagen {
     display: flex;
     justify-content: center;

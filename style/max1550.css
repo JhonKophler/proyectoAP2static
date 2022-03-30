@@ -40,7 +40,17 @@
       width:95%;
   }
 
-  
+  .box-width > h3 {
+    font-size: 0.7rem;
+  }
+
+  .box-width  h5{
+    font-size: .5rem;
+  }
+
+  .box-width .info-exp{
+    font-size: .5em;
+  }
 
   .exp {
     display: block;
