@@ -19,6 +19,31 @@
   #ojo:hover {
     cursor: pointer;
   }
+
+  #navbar {
+    display: flex;
+    position: fixed;
+    right: 0.1rem;
+    top: 1.65rem;
+    margin: 0.3rem;
+    z-index: 10;
+    transition: var(--anim);
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .top {
+    border-radius: 1rem 1rem 0 0!important;
+  }
+  .low {
+    border-radius: 0 0 1rem 1rem!important;
+  } 
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+
   .exp {
     display: block;
   }

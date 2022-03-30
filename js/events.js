@@ -104,19 +104,20 @@ function exit() {
 const body = d.querySelector('body');
 const btnOjoMenu = d.querySelector('#ojo');
 const menu = d.querySelector('#menu-palabras');
+const menuCompleto = d.querySelector('#navbar');
 let mediaQuery = w.matchMedia('(max-width:  1550px)');
 
 mediaQuery.onchange = () => {
     if (!mediaQuery.matches) {
         
         btnOjoMenu.setAttribute('class', 'fa-solid fa-eye');
-        btnOjoMenu.style.display = "none";
+        btnOjoMenu.classList.toggle('ocultar');
         menu.style.display = "flex";
         
     } 
     else{
 
-        btnOjoMenu.style.display = "flex";
+        btnOjoMenu.classList.toggle('ocultar');
         menu.style.display = "none";
 
     }
@@ -125,15 +126,33 @@ mediaQuery.onchange = () => {
 btnOjoMenu.addEventListener('click', () => {
     classOjo = btnOjoMenu.getAttribute('class');
     if (classOjo === 'fa-solid fa-eye') {
-        console.log("ojo cerrado");
+        ("ojo cerrado");
         btnOjoMenu.classList.remove('fa-eye')
         btnOjoMenu.classList.add('fa-xmark');
         menu.style.display = "flex";
     }
     else{
-        console.log("ojo abierto");
+        ("ojo abierto");
         btnOjoMenu.classList.remove('fa-xmark');
         btnOjoMenu.classList.add('fa-eye');
         menu.style.display = "none";
     }
 });
+
+menu.addEventListener('click', () => {
+    setTimeout(() => {
+        btnOjoMenu.click();
+    },1000);
+});
+
+
+w.addEventListener('scroll', () => {
+    let altura = d.documentElement.scrollTop ;
+    console.log(altura);
+    if (altura > 40) {
+        menuCompleto.style.top = '0';
+    }
+    if (altura < 50) {
+        menuCompleto.style.top = '1.65rem';
+    }
+})
