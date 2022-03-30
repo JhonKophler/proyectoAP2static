@@ -25,7 +25,7 @@
     /*Detalles*/
     --sombra: -0.5rem 0.3rem 0.2rem rgba(0, 0, 0, 0.25);
     --sombraInterior: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
-    --anim: all 0.3s ease-out;
+    --anim: all 0.2s ease-out;
     --colorCerrarCuadro: #e61919;
     /*------------------------------*/
     /*Configuraciones Globales*/
@@ -750,6 +750,7 @@ footer {
 .subir {
     background-color: var(--colorNegroDegrade2);
     font-size: 0.5rem;
+    margin: .5rem;
     padding: 0.3rem;
     bottom: 1rem;
     left: 1rem;
@@ -764,5 +765,8 @@ footer {
     padding: 0.3rem;
 }
 
+.costado{
+    right: 1rem;
+}
 
 /* ANIMACIONES */

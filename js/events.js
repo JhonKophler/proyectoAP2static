@@ -1,6 +1,8 @@
 const d = document;
 const w = window;
 
+
+
 function copiado() {
 
     var copyText = d.getElementById("btn-disc").textContent;
@@ -103,56 +105,57 @@ function exit() {
 /*   Menu Desplegable  */
 const body = d.querySelector('body');
 const btnOjoMenu = d.querySelector('#ojo');
-const menu = d.querySelector('#menu-palabras');
 const menuCompleto = d.querySelector('#navbar');
+const menu = d.querySelector('#menu-palabras');
 let mediaQuery = w.matchMedia('(max-width:  1550px)');
 
 mediaQuery.onchange = () => {
     if (!mediaQuery.matches) {
-        
         btnOjoMenu.setAttribute('class', 'fa-solid fa-eye');
         btnOjoMenu.classList.toggle('ocultar');
         menu.style.display = "flex";
         
     } 
     else{
-
+        
         btnOjoMenu.classList.toggle('ocultar');
         menu.style.display = "none";
-
+        location.reload();
     }
 };
 
 btnOjoMenu.addEventListener('click', () => {
     classOjo = btnOjoMenu.getAttribute('class');
+
     if (classOjo === 'fa-solid fa-eye') {
-        ("ojo cerrado");
+        
         btnOjoMenu.classList.remove('fa-eye')
         btnOjoMenu.classList.add('fa-xmark');
         menu.style.display = "flex";
     }
     else{
-        ("ojo abierto");
+        
         btnOjoMenu.classList.remove('fa-xmark');
         btnOjoMenu.classList.add('fa-eye');
         menu.style.display = "none";
     }
 });
 
-menu.addEventListener('click', () => {
-    setTimeout(() => {
-        btnOjoMenu.click();
-    },1000);
-});
-
 
 w.addEventListener('scroll', () => {
     let altura = d.documentElement.scrollTop ;
-    console.log(altura);
-    if (altura > 40) {
+    if (altura > 20) {
         menuCompleto.style.top = '0';
     }
-    if (altura < 50) {
+    if (altura < 30) {
         menuCompleto.style.top = '1.65rem';
     }
 })
+
+menu.addEventListener('click', () => {
+    if (mediaQuery.matches) {
+        setTimeout(() => {
+            btnOjoMenu.click();
+        },1000);
+    }
+});

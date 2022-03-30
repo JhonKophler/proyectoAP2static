@@ -32,6 +32,10 @@
     align-items: flex-end;
   }
 
+  #menu-palabras{
+    display: none;
+  }
+
   .top {
     border-radius: 1rem 1rem 0 0!important;
   }

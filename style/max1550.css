@@ -29,10 +29,15 @@
 
   }
 
+  #menu-palabras{
+    display: none;
+  }
+
   #mid{
       top: 0;
       border-radius: 1rem;
       box-shadow: var(--sombra);
+      width:95%;
   }
 
   
@@ -107,7 +112,7 @@
   }
 
   .formulario-contacto {
-    width: 90%;
+    width: 95%;
     margin-top: 1rem;
     box-shadow: var(--sombra);
   }
