@@ -143,6 +143,23 @@ content {
     background-color: var(--colorFondoCelesteOscuro);
 }
 
+/* Ventana emergente Usuario */
+
+.usuario{
+    background-color: var(--colorPrimario);
+    display: flex;
+    position: absolute;
+    z-index: 30;
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: .3s ease all;
+    opacity: 0;
+}
 
 /* Configuraciones Cajas */
 

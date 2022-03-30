@@ -6,7 +6,8 @@ const w = window;
 function copiado() {
 
     var copyText = d.getElementById("btn-disc").textContent;
-
+    var ventana = d.querySelector(".usuario");
+    ventana.style.display = 'block';
     navigator.clipboard.writeText(copyText);
 
     alert("Usuario copiado al Portapapels: " + copyText);
