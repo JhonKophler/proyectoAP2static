@@ -6,6 +6,10 @@
   .ocultar{
     display: none;
   }
+
+  body::-webkit-scrollbar {
+    display: none; /* width of the entire scrollbar */
+  }
   
   #ojo {
     display: flex;
@@ -34,6 +38,9 @@
 
   #menu-palabras{
     display: none;
+  }
+  #menu-palabras li a{
+    font-size: 1rem;
   }
 
   .top {
@@ -168,4 +175,24 @@
     width: 85%;
     margin: 0.3rem;
   }
+
+
+  /* VISOR DE FOTOS */
+  
+  .visor-img img {
+    top: 35%;
+    width: 90vw;
+    height: 35vh;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .visor-img button {
+    top: 30%;
+    right: 40%;
+    margin: 1rem;
+    position: absolute;
+  }
+
+  
 }

@@ -7,10 +7,13 @@ function copiado() {
 
     var copyText = d.getElementById("btn-disc").textContent;
     var ventana = d.querySelector(".usuario");
-    ventana.style.display = 'block';
+    ventana.style.transition = 'var(--anim)';
+    ventana.style.opacity = '1';
     navigator.clipboard.writeText(copyText);
 
-    alert("Usuario copiado al Portapapels: " + copyText);
+    setTimeout(() => {
+        ventana.style.opacity = '0';
+    }, 1000);   
 
 }
 
